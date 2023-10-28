@@ -28,7 +28,10 @@ This notebook includes the following key components:
 
 ## Source Code
 
-You can find the complete source code and implementation in the notebook file, mnistfashion-vae.ipynb
+## Source Code
+
+You can find the complete source code and implementation in the notebook file, [mnistfashion-vae.ipynb](https://github.com/badeeer/mnistfashion-vae/blob/master/mnistfashion-vae.ipynb).
+
 
 ## Usage
 
