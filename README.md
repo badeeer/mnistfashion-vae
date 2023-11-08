@@ -1,6 +1,6 @@
 # Introduction to VAE and Fashion MNIST
 
-*Inspired by the book "Deep Learning" by François Chollet*
+*Inspired by the book "Deep Learning with Python" by François Chollet*
 
 The **Variational Autoencoder (VAE)** is a type of generative model used in machine learning and deep learning. It is particularly useful for tasks like data generation, image reconstruction, and feature learning. The **Fashion MNIST** dataset serves as a suitable candidate for applying VAE.
 
