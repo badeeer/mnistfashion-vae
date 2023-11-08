@@ -30,7 +30,7 @@ First, we load the **Fashion MNIST** dataset, which contains grayscale images of
 - `x_train` holds the training images, and `_` is a placeholder for training labels, which we are not using in this specific code.
 - `x_test` stores the testing images, and similarly, `_` represents the testing labels, which are not used here.
 
-# Normalize pixel values to the range [0, 1]
+### Normalize pixel values to the range [0, 1]
 
 To prepare the image data for the model, we normalize the pixel values from the original range [0, 255] to the range [0, 1] by dividing each pixel value by 255.
 
@@ -41,7 +41,7 @@ x_test = x_test.astype('float32') / 255
 
 This normalization step is essential for neural networks to work effectively, as it scales the input data to a suitable range for training.
 
-# Add a channel dimension to represent grayscale images
+### Add a channel dimension to represent grayscale images
 
 Next, we add a channel dimension to the images to make them compatible with convolutional neural networks (CNNs). In this case, we add a single channel dimension to represent grayscale images.
 
@@ -52,7 +52,7 @@ x_test = x_test[..., tf.newaxis]
 
 The `tf.newaxis` operation adds a new dimension to the existing data, making it a 3D tensor with the shape `(batch_size, height, width, channels)`. In this context, the `channels` dimension is 1, indicating grayscale images.
 
-# Define the latent space dimension
+### Define the latent space dimension
 
 Finally, we define the dimension of the latent space for the Variational Autoencoder (VAE). In this code, `latent_dim` is set to 200, which determines the dimensionality of the compact, continuous latent space where the VAE will represent and generate data.
 
