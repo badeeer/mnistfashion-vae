@@ -144,20 +144,6 @@ grid_y = np.linspace(-2, 2, n)[::-1]
 - `figure` is a NumPy array initialized to zeros and used to store the generated grid of images.
 - `grid_x` and `grid_y` are arrays that define a grid of values in the latent space. In this example, the code creates a grid in a 2D latent space by varying `grid_x` and `grid_y` from -2 to 2. These values are used to sample from the latent space.
 
-The following code generates the images and populates the `figure` array:
-
-```python
-for i, yi in enumerate(grid_y):
-    for j, xi in enumerate(grid_x):
-        # Sample from the latent space (2 dimensions in this case)
-        z_sample = np.random.normal(size=(1, latent_dim))
-        x_decoded = vae.decoder.predict(z_sample)  # Generate an image from the latent vector
-        digit = (x_decoded[0] * 255).astype(np.uint8)[:, :, 0]  # Convert to 2D and rescale to 8-bit grayscale
-        figure[
-            i * digit_size : (i + 1) * digit_size,
-            j * digit_size : (j + 1) * digit_size,
-        ] = digit
-```
 
 - Two nested loops iterate through the `grid_x` and `grid_y` values. In each iteration, a random sample `z_sample` is drawn from the latent space (in this case, 2 dimensions).
 - The `z_sample` is then passed to the VAE's decoder, `vae.decoder`, to generate an image from the latent vector. This image is stored in `x_decoded`.
