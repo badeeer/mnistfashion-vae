@@ -15,19 +15,19 @@ The problem addressed here is to leverage a Variational Autoencoder to learn a c
 
 ## Import necessary libraries and modules
 
- - 'import tensorflow as tf': This line imports the TensorFlow library, which is a widely-used deep learning framework. It's necessary for building and training the machine learning model.
+ - `import tensorflow as tf`: This line imports the TensorFlow library, which is a widely-used deep learning framework. It's necessary for building and training the machine learning model.
 
-from tensorflow.keras.datasets import fashion_mnist: This line imports the Fashion MNIST dataset from the TensorFlow.keras.datasets module. Fashion MNIST contains grayscale images of various clothing items and accessories, making it a suitable dataset for machine learning.
+ - `from tensorflow.keras.datasets import fashion_mnist`: This line imports the Fashion MNIST dataset from the TensorFlow.keras.datasets module. Fashion MNIST contains grayscale images of various clothing items and accessories, making it a suitable dataset for machine learning.
 
-from tensorflow.keras.models import Model: This line imports the Model class from the Keras library. Keras is a high-level neural network API that operates on top of TensorFlow. The Model class will be used to define the architecture of the machine learning model.
+- `from tensorflow.keras.models import Model`: This line imports the Model class from the Keras library. Keras is a high-level neural network API that operates on top of TensorFlow. The Model class will be used to define the architecture of the machine learning model.
 
-from tensorflow.keras import layers: This line imports various layers and components from Keras. These layers are essential for constructing the neural network model, including dense layers and convolutional layers.
+ - `from tensorflow.keras import layers`: This line imports various layers and components from Keras. These layers are essential for constructing the neural network model, including dense layers and convolutional layers.
 
-from tensorflow import keras: This line imports the Keras subpackage from TensorFlow. Keras is a user-friendly and high-level framework for creating and training neural networks. It integrates seamlessly with TensorFlow, a lower-level deep learning framework.
+ - `from tensorflow import keras`: This line imports the Keras subpackage from TensorFlow. Keras is a user-friendly and high-level framework for creating and training neural networks. It integrates seamlessly with TensorFlow, a lower-level deep learning framework.
 
-import matplotlib.pyplot as plt: This line imports the Matplotlib library, which is commonly used for data visualization. Matplotlib will be used to display images and plots during the training and evaluation of the machine learning model.
+ - `import matplotlib.pyplot as plt`: This line imports the Matplotlib library, which is commonly used for data visualization. Matplotlib will be used to display images and plots during the training and evaluation of the machine learning model.
 
-import numpy as np: This line imports the NumPy library, which is essential for numerical operations in Python. It supports arrays, matrices, and various mathematical operations, making it crucial for data processing in machine learning.
+ - `import numpy as np`: This line imports the NumPy library, which is essential for numerical operations in Python. It supports arrays, matrices, and various mathematical operations, making it crucial for data processing in machine learning.
 
 
 
