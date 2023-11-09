@@ -15,7 +15,7 @@ The problem addressed here is to leverage a Variational Autoencoder to learn a c
 
 ## Import necessary libraries and modules
 
-import tensorflow as tf: This line imports the TensorFlow library, which is a widely-used deep learning framework. It's necessary for building and training the machine learning model.
+ - 'import tensorflow as tf': This line imports the TensorFlow library, which is a widely-used deep learning framework. It's necessary for building and training the machine learning model.
 
 from tensorflow.keras.datasets import fashion_mnist: This line imports the Fashion MNIST dataset from the TensorFlow.keras.datasets module. Fashion MNIST contains grayscale images of various clothing items and accessories, making it a suitable dataset for machine learning.
 
